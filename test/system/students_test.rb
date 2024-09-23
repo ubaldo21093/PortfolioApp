@@ -15,6 +15,7 @@ class StudentsTest < ApplicationSystemTestCase
     click_on "New student"
 
     fill_in "Graduation date", with: @student.graduation_date
+    fill_in "Last name", with: @student.last_name
     fill_in "Major", with: @student.major
     fill_in "Minor", with: @student.minor
     fill_in "Name", with: @student.name
@@ -30,6 +31,7 @@ class StudentsTest < ApplicationSystemTestCase
     click_on "Edit this student", match: :first
 
     fill_in "Graduation date", with: @student.graduation_date
+    fill_in "Last name", with: @student.last_name
     fill_in "Major", with: @student.major
     fill_in "Minor", with: @student.minor
     fill_in "Name", with: @student.name
