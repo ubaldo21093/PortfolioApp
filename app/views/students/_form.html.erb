@@ -17,11 +17,6 @@
   </div>
 
   <div>
-    <%= form.label :last_name, style: "display: block" %>
-    <%= form.text_field :last_name %>
-  </div>
-
-  <div>
     <%= form.label :school_email, style: "display: block" %>
     <%= form.text_field :school_email %>
   </div>
@@ -40,6 +35,19 @@
     <%= form.label :graduation_date, style: "display: block" %>
     <%= form.date_field :graduation_date %>
   </div>
+
+
+  <div>
+    <%= form.label :image, "Upload Profile Picture:" %>
+    <%= form.file_field :image %>
+  </div>
+
+
+  <div>
+    <%= form.label :bio, 'Bio' %>
+    <%= form.text_area :bio, cols: 20, rows: 8 %>
+  </div>
+
 
   <div>
     <%= form.submit %>
